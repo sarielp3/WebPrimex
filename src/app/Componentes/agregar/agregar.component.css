@@ -1,0 +1,26 @@
+.contenedor{
+    position: relative;
+    
+}
+
+h1{
+    text-align: center;
+    padding: 17px;
+    background-color: cadetblue;
+    color: rgb(27, 27, 27);
+}
+
+h2{
+    text-align: center;
+}
+
+.hijo{
+    padding: 29px;
+    margin: 0 auto;
+  width: 300px;
+  background: rgb(187,187,187);
+  background: linear-gradient(180deg, rgba(187,187,187,1) 2%, rgba(230,230,230,1) 21%, rgba(255,255,255,1) 39%);
+  box-shadow: 10px 10px 8px #888888;
+  text-align: center;
+  
+}

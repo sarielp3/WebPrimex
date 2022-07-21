@@ -1,0 +1,51 @@
+.contenedor{
+    position: relative;
+    
+}
+
+h1{
+    text-align: center;
+    padding: 17px;
+    background-color: cadetblue;
+    color: rgb(27, 27, 27);
+}
+
+
+
+.hijo{
+padding: 29px;
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  width: 900px;
+  background: rgb(187,187,187);
+  background: linear-gradient(180deg, rgba(187,187,187,1) 2%, rgba(230,230,230,1) 21%, rgba(255,255,255,1) 39%);
+  box-shadow: 10px 10px 8px #888888;
+}
+
+td{
+    border: 2px solid;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:540;
+    color: black;
+}
+
+#agregarbtn{
+    margin-left: 340px;
+    margin-bottom: 20px;
+}
+
+.direccion{
+    width: 200px;
+}
+
+.formulario{
+    text-align: center;
+    
+}
+
+a{
+    margin: 15px;
+}

@@ -1,0 +1,46 @@
+<div class="contenedor">
+<h1>Prueba Tecnica Victor Hugo</h1>
+
+    <div class="hijo">
+<button routerLink="/Agregar" id="agregarbtn" type="button" class="btn btn-dark">Agregar Empleado</button>
+
+<form class="formulario">
+<p>Filtar por:</p>
+<a>Nombre: <input [(ngModel)] = "empleado.nombres"  name="nombres" type="text" > </a>
+<a>Apellido Paterno: <input [(ngModel)] = "empleado.ap_pat"  name="ap_pat" type="text" >  </a><br><br>
+<a>Apellido Materno: <input [(ngModel)] = "empleado.ap_mat" type="text" name="ap_mat" >  </a>
+ <button (click)="filtrar()" type="button" class="btn btn-info">Filtrar</button>
+ <button (click)="limpiar()" type="button" class="btn btn-info">Limpiar</button>
+</form>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Nombres</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">Direccion</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">
+           
+        </th>
+        <th scope="col">
+           
+        </th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let emp of empleados">
+        <td>{{emp.nombres}}</td>
+        <td>{{emp.ap_pat}} {{emp.ap_mat}}</td>
+        <td class="direccion">{{emp.calle}},{{emp.colonia}},{{emp.ciudad}},{{emp.municipio}}</td>
+        <td>{{emp.telefono}}</td>
+        <td>
+            <button (click)="ModificarEmple(emp.idempleado || '')" type="button" class="btn btn-primary">Editar</button>
+        </td>
+        <td>
+            <button (click)="EliminarEmple(emp.idempleado || '')"  type="button" class="btn btn-danger">Eliminar</button>
+        </td>
+    </tr>
+</tbody>
+</table>
+</div>
+</div>

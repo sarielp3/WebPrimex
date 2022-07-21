@@ -1,0 +1,135 @@
+<div class="contenedor">
+    <h1>Prueba Tecnica Victor Hugo</h1>
+    <h2>Modificar Empleado!</h2>
+        <div class="hijo">
+            
+<div class="container">
+    
+    <div class="row">
+
+        <div>
+            <form [formGroup] = "agregarform" (ngSubmit)="modificar()">
+
+                <div class="alert-danger" *ngIf="nombres?.invalid && (nombres?.dirty || nombres?.touched)">
+                    <div *ngIf="nombres?.errors?.required" class="container-error-message">
+                        Ingrese un nombre
+ 
+                    </div>
+                    <div *ngIf="nombres?.errors?.minlength" class="container-error-message">
+                     El nombre debe de tener 3 o mas caracteres
+ 
+                 </div>
+                </div>
+                <label class="form-label">Nombres:</label>
+                <input [(ngModel)] = "empleado.nombres" type="text" id="nom" formControlName="nombres" class="form-control" name="nombres">
+<!--         -->
+                <div class="alert-danger" *ngIf="ap_pat?.invalid && (ap_pat?.dirty || ap_pat?.touched)">
+                    <div *ngIf="ap_pat?.errors?.required" class="container-error-message">
+                        Ingrese el Apellido Paterno
+ 
+                    </div>
+                    <div *ngIf="ap_pat?.errors?.minlength" class="container-error-message">
+                     El apellido debe de tener 3 o mas caracteres
+ 
+                 </div>
+                </div>
+                <label class="form-label">Apellido Paterno:</label>
+                <input [(ngModel)] = "empleado.ap_pat" type="text" formControlName="ap_pat" class="form-control" name="ap_pat">
+<!--               -->
+                <div class="alert-danger" *ngIf="ap_mat?.invalid && (ap_mat?.dirty || ap_mat?.touched)">
+                    <div *ngIf="ap_mat?.errors?.required" class="container-error-message">
+                        Ingrese el apellido materno
+ 
+                    </div>
+                    <div *ngIf="ap_mat?.errors?.minlength" class="container-error-message">
+                     El apellido debe de tener 3 o mas caracteres
+ 
+                 </div>
+                </div>
+                <label class="form-label">Apellido Materno:</label>
+                <input [(ngModel)] = "empleado.ap_mat" type="text" formControlName="ap_mat" class="form-control" name="ap_mat">
+                <!--               -->
+                <div class="alert-danger" *ngIf="calle?.invalid && (calle?.dirty || calle?.touched)">
+                    <div *ngIf="calle?.errors?.required" class="container-error-message">
+                        Ingrese el nombre de la calle
+ 
+                    </div>
+                    <div *ngIf="calle?.errors?.minlength" class="container-error-message">
+                     La calle debe de tener 3 o mas caracteres
+ 
+                 </div>
+                </div>
+                <label class="form-label">Calle:</label>
+                <input [(ngModel)] = "empleado.calle" type="text" formControlName="calle" class="form-control" name="calle">
+
+                <!--               -->
+                <div class="alert-danger" *ngIf="colonia?.invalid && (colonia?.dirty || colonia?.touched)">
+                    <div *ngIf="colonia?.errors?.required" class="container-error-message">
+                        Ingrese el nombre de la colonia
+ 
+                    </div>
+                    <div *ngIf="colonia?.errors?.minlength" class="container-error-message">
+                     La colonia debe de tener 3 o mas caracteres
+ 
+                 </div>
+                </div>
+                <label class="form-label">Colonia:</label>
+                <input [(ngModel)] = "empleado.colonia" type="text" formControlName="colonia" class="form-control" name="colonia">
+
+                 <!--               -->
+                 <div class="alert-danger" *ngIf="ciudad?.invalid && (ciudad?.dirty || ciudad?.touched)">
+                    <div *ngIf="ciudad?.errors?.required" class="container-error-message">
+                        Ingrese el nombre de la ciudad
+ 
+                    </div>
+                    <div *ngIf="ciudad?.errors?.minlength" class="container-error-message">
+                     La colonia debe de tener 3 o mas caracteres
+ 
+                 </div>
+                </div>
+                <label class="form-label">Ciudad:</label>
+                <input [(ngModel)] = "empleado.ciudad" type="text" formControlName="ciudad" class="form-control" name="ciudad">
+
+                 <!--               -->
+                 <div class="alert-danger" *ngIf="municipio?.invalid && (municipio?.dirty || municipio?.touched)">
+                    <div *ngIf="municipio?.errors?.required" class="container-error-message">
+                        Ingrese el nombre del municipio
+ 
+                    </div>
+                    <div *ngIf="municipio?.errors?.minlength" class="container-error-message">
+                     El municipio debe de tener 3 o mas caracteres
+ 
+                 </div>
+                </div>
+                <label class="form-label">Municipio:</label>
+                <input [(ngModel)] = "empleado.municipio" type="text" formControlName="municipio" class="form-control" name="municipio">
+
+                <!--               -->
+                <div class="alert-danger" *ngIf="telefono?.invalid && (telefono?.dirty || telefono?.touched)">
+                    <div *ngIf="telefono?.errors?.required" class="container-error-message">
+                        Ingrese el numero de telefono
+ 
+                    </div>
+                    <div *ngIf="telefono?.errors?.minlength" class="container-error-message">
+                     El telefono debe de tener 7 o mas caracteres
+ 
+                 </div>
+                </div>
+                <label class="form-label">Telefono:</label>
+                <input [(ngModel)] = "empleado.telefono" type="tel" formControlName="telefono" class="form-control" name="telefono">
+
+                
+<br>
+                <button type="submit" class="btn btn-primary">Modificar</button>
+
+            </form>
+        </div>
+
+    </div>
+    
+
+
+</div>
+
+        </div>
+</div>
